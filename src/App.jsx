@@ -9,6 +9,7 @@ import Blackjack from './components/games/Blackjack';
 import Roulette from './components/games/Roulette';
 import Slots from './components/games/Slots';
 import Poker from './components/games/Poker';
+import Crash from './components/games/Crash';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   const renderGame = () => {
     switch (activeGame) {
+      case 'crash': return <Crash />;
       case 'dice': return <Dice />;
       case 'mines': return <Mines />;
       case 'plinko': return <Plinko />;

@@ -8,10 +8,12 @@ import {
   Club, 
   CircleDashed, 
   Zap, 
-  Swords 
+  Swords,
+  Rocket
 } from 'lucide-react';
 
 const games = [
+  { id: 'crash', title: 'Crash', description: 'Cash out before the crash.', icon: Rocket, color: 'text-orange-500' },
   { id: 'dice', title: 'Dice', description: 'Slide to multiply.', icon: Dice5, color: 'text-emerald-400' },
   { id: 'mines', title: 'Mines', description: 'Avoid the traps.', icon: Bomb, color: 'text-red-500' },
   { id: 'plinko', title: 'Plinko', description: 'Drop the ball.', icon: TrendingUp, color: 'text-pink-500' },
@@ -54,7 +56,7 @@ const Home = () => {
   const setActiveGame = useGameStore((state) => state.setActiveGame);
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4">
+    <div className="max-w-7xl mx-auto py-12 px-4 ml-0 lg:ml-72 transition-all duration-300">
       <div className="mb-16 text-center space-y-4">
         <motion.div 
            initial={{ opacity: 0, y: 20 }}
@@ -74,7 +76,7 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {games.map((game, i) => (
           <motion.div
             key={game.id}

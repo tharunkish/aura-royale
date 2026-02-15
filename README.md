@@ -20,17 +20,18 @@
   </p>
 
   <h3>Fair. Fast. Forever.</h3>
-  <p>A premium, AAA-quality web gambling simulation featuring 8 provably fair games, a persistent economy, and an advanced financial analytics suite.</p>
+  <p>A premium, AAA-quality web gambling simulation featuring 9 provably fair games, a persistent economy, and an advanced financial analytics suite.</p>
 </div>
 
 ---
 
 ## 🎮 The Game Collection
 
-Aura Royale features 8 completely unique games, each built with custom physics and mathematical engines.
+Aura Royale features 9 completely unique games, each built with custom physics and mathematical engines.
 
 | Game | Description | Key Features |
 | :--- | :--- | :--- |
+| **Crash** | High-stakes multiplier run. | Real-time exponential growth, live social tension. |
 | **Dice** | The classic slider game. | Real-time win chance calculation, 98% RTP. |
 | **Mines** | High-stakes grid sweeper. | 3D tile flips, exponential multipliers. |
 | **Plinko** | Physics-based ball drop. | Custom Canvas engine, collision haptics. |
@@ -43,6 +44,11 @@ Aura Royale features 8 completely unique games, each built with custom physics a
 ---
 
 ## 💎 Key Features
+
+### 📡 Live Social Feed
+Experience the energy of a global casino.
+*   **Real-Time Ticker:** Watch (simulated) players win big in real-time.
+*   **Big Win Effects:** Massive payouts trigger global notifications.
 
 ### 🏦 The Vault (Financial Suite)
 Stop guessing your profits. The Vault provides a **Wall Street-grade dashboard** for your fake millions.

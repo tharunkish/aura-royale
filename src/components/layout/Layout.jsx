@@ -1,5 +1,6 @@
 import Header from './Header';
 import LevelUpModal from '../ui/LevelUpModal';
+import LiveFeed from './LiveFeed';
 import { motion } from 'framer-motion';
 import { useGameStore } from '../../store/gameStore';
 import { useEffect } from 'react';
@@ -24,6 +25,9 @@ const Layout = ({ children }) => {
       {/* Header */}
       <Header />
       
+      {/* Sidebar Feed */}
+      <LiveFeed />
+      
       {/* Global Modals */}
       <LevelUpModal />
 
@@ -32,7 +36,7 @@ const Layout = ({ children }) => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="relative z-10 pt-24 px-4 container mx-auto"
+        className="relative z-10 pt-24 px-4 container mx-auto lg:pl-72"
       >
         {children}
       </motion.main>
