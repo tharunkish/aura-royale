@@ -10,6 +10,13 @@ import Roulette from './components/games/Roulette';
 import Slots from './components/games/Slots';
 import Poker from './components/games/Poker';
 import Crash from './components/games/Crash';
+import Limbo from './components/games/Limbo';
+import HiLo from './components/games/HiLo';
+import DragonTower from './components/games/DragonTower';
+import Diamonds from './components/games/Diamonds';
+import Baccarat from './components/games/Baccarat';
+import Wheel from './components/games/Wheel';
+import Slide from './components/games/Slide';
 import { motion, AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -26,6 +33,13 @@ function App() {
       case 'roulette': return <Roulette />;
       case 'slots': return <Slots />;
       case 'poker': return <Poker />;
+      case 'limbo': return <Limbo />;
+      case 'hilo': return <HiLo />;
+      case 'dragon': return <DragonTower />;
+      case 'diamonds': return <Diamonds />;
+      case 'baccarat': return <Baccarat />;
+      case 'wheel': return <Wheel />;
+      case 'slide': return <Slide />;
       default: return <Home />;
     }
   };
